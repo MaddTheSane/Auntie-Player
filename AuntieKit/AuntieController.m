@@ -24,10 +24,11 @@
 
 #import "AuntieController.h"
 #import "Episode.h"
-#import "EpisodeVersion.h"
 #import "EpisodeCategory.h"
 #import "Programme.h"
 #import "Channel.h"
+
+#import "AuntieKit/AuntieKit-Swift.h"
 
 @import ThunderRequestTV;
 

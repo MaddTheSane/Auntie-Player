@@ -24,7 +24,7 @@
 
 #import "Episode.h"
 #import "NSDate+Tools.h"
-#import "EpisodeVersion.h"
+#import "AuntieKit/AuntieKit-Swift.h"
 
 @implementation Episode
 

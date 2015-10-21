@@ -45,8 +45,7 @@
 		49F848111BD3F4D6008FCED8 /* LiveChannelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F848101BD3F4D6008FCED8 /* LiveChannelsViewController.m */; };
 		49FB69901BD2547700B5643B /* NSDate+Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = 49FB698E1BD2547700B5643B /* NSDate+Tools.h */; };
 		49FB69911BD2547700B5643B /* NSDate+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FB698F1BD2547700B5643B /* NSDate+Tools.m */; };
-		49FB69991BD25BE000B5643B /* EpisodeVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 49FB69971BD25BE000B5643B /* EpisodeVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		49FB699A1BD25BE000B5643B /* EpisodeVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FB69981BD25BE000B5643B /* EpisodeVersion.m */; };
+		555042151BD80ECB009F186A /* EpisodeVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555042141BD80ECB009F186A /* EpisodeVersion.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,8 +156,7 @@
 		49F848101BD3F4D6008FCED8 /* LiveChannelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveChannelsViewController.m; sourceTree = "<group>"; };
 		49FB698E1BD2547700B5643B /* NSDate+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Tools.h"; sourceTree = "<group>"; };
 		49FB698F1BD2547700B5643B /* NSDate+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Tools.m"; sourceTree = "<group>"; };
-		49FB69971BD25BE000B5643B /* EpisodeVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpisodeVersion.h; sourceTree = "<group>"; };
-		49FB69981BD25BE000B5643B /* EpisodeVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpisodeVersion.m; sourceTree = "<group>"; };
+		555042141BD80ECB009F186A /* EpisodeVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeVersion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,8 +294,7 @@
 				49084FFE1BD1446C0012F636 /* EpisodeCategory.m */,
 				49084FED1BD13FBC0012F636 /* Episode.h */,
 				49084FEE1BD13FBC0012F636 /* Episode.m */,
-				49FB69971BD25BE000B5643B /* EpisodeVersion.h */,
-				49FB69981BD25BE000B5643B /* EpisodeVersion.m */,
+				555042141BD80ECB009F186A /* EpisodeVersion.swift */,
 				49084FF11BD13FCD0012F636 /* Channel.h */,
 				49084FF21BD13FCD0012F636 /* Channel.m */,
 				49084FF51BD13FE10012F636 /* Series.h */,
@@ -322,7 +319,6 @@
 				49084FF71BD13FE10012F636 /* Series.h in Headers */,
 				49084FFB1BD13FF80012F636 /* Programme.h in Headers */,
 				49084F8E1BD1381B0012F636 /* AuntieController.h in Headers */,
-				49FB69991BD25BE000B5643B /* EpisodeVersion.h in Headers */,
 				493EA45C1BD1304E00B0C50D /* AuntieKit.h in Headers */,
 				49084FFF1BD1446C0012F636 /* EpisodeCategory.h in Headers */,
 				49FB69901BD2547700B5643B /* NSDate+Tools.h in Headers */,
@@ -376,6 +372,7 @@
 		493EA4351BD1300D00B0C50D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Matt & Phill Collaboration";
 				TargetAttributes = {
@@ -485,12 +482,12 @@
 			files = (
 				49084F8F1BD1381B0012F636 /* AuntieController.m in Sources */,
 				490850001BD1446C0012F636 /* EpisodeCategory.m in Sources */,
-				49FB699A1BD25BE000B5643B /* EpisodeVersion.m in Sources */,
 				49084FF41BD13FCD0012F636 /* Channel.m in Sources */,
 				49084FF81BD13FE10012F636 /* Series.m in Sources */,
 				49084FFC1BD13FF80012F636 /* Programme.m in Sources */,
 				49FB69911BD2547700B5643B /* NSDate+Tools.m in Sources */,
 				49084FF01BD13FBC0012F636 /* Episode.m in Sources */,
+				555042151BD80ECB009F186A /* EpisodeVersion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,6 +592,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Auntie Player/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.auntiproductions.Auntie-Player";
@@ -607,6 +605,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Auntie Player/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.auntiproductions.Auntie-Player";
@@ -617,6 +616,7 @@
 		493EA4631BD1304E00B0C50D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -628,6 +628,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hacktothefuture.AuntieKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -636,6 +637,7 @@
 		493EA4641BD1304E00B0C50D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

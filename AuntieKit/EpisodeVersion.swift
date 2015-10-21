@@ -22,42 +22,31 @@
 //    THE SOFTWARE.
 //
 
-#import "EpisodeVersion.h"
+import Foundation
 
-@implementation EpisodeVersion
+public class EpisodeVersion : NSObject {
+	public var identifier: String?
+	public var kind: String?
+	public var duration: String?
+	public var HD = false
 
-- (instancetype)initWithDictionary:(NSDictionary *)dictionary
-{
-    self = [super init];
-    if (self) {
-        
-        if (dictionary[@"id"] && [dictionary[@"id"] isKindOfClass:[NSString class]]) {
-            
-            self.identifier = dictionary[@"id"];
-            
+	public init(dictionary: [String: AnyObject]) {
+		if let anID = dictionary["id"] as? String {
+			self.identifier = anID
+		}
+		
+		if let aKind = dictionary[@"kind"] as? String {
+			self.kind = aKind
+		}
+		
+		if let durationDict = dictionary["duration"] as? [String: AnyObject], durationText = durationDict["text"] as? String {
+            self.duration = durationText;
         }
-        
-        if (dictionary[@"kind"] && [dictionary[@"kind"] isKindOfClass:[NSString class]]) {
-            
-            self.kind = dictionary[@"kind"];
-            
-        }
-        
-        if (dictionary[@"duration"] && [dictionary[@"duration"] isKindOfClass:[NSDictionary class]] && dictionary[@"duration"][@"text"] && [dictionary[@"duration"][@"text"] isKindOfClass:[NSString class]]) {
-            
-            self.duration = dictionary[@"duration"][@"text"];
-            
-        }
-        
-        if (dictionary[@"hd"]) {
-            
-            self.HD = [dictionary[@"hd"] boolValue];
-            
-        }
-
-        
-    }
-    return self;
+		
+		if let anHD = dictionary["hd"] as? Bool {
+			self.HD = anHD
+		}
+		
+		super.init()
+	}
 }
-
-@end

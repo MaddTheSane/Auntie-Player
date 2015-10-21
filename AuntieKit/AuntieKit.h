@@ -35,5 +35,4 @@ FOUNDATION_EXPORT const unsigned char AuntieKitVersionString[];
 #import <AuntieKit/AuntieController.h>
 #import <AuntieKit/Episode.h>
 #import <AuntieKit/Channel.h>
-#import <AuntieKit/EpisodeVersion.h>
 #import <AuntieKit/EpisodeCategory.h>
