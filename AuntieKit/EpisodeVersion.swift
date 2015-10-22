@@ -35,7 +35,7 @@ public class EpisodeVersion : NSObject {
 			self.identifier = anID
 		}
 		
-		if let aKind = dictionary[@"kind"] as? String {
+		if let aKind = dictionary["kind"] as? String {
 			self.kind = aKind
 		}
 		

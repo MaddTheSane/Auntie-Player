@@ -28,7 +28,7 @@
 
 @class Episode;
 
-@interface EpisodeDetailViewController : UIViewController
+@interface EpisodeDetailViewController : UIViewController <EpisodeCollectionViewDelegate>
 
 @property (nonatomic, strong) AsyncImageView *backgroundImageView;
 @property (nonatomic, strong) UIVisualEffectView *backgroundVisualEffectView;
